@@ -53,7 +53,7 @@ ifeq ($(GCC_VER_49),1)
 ccflags-y += -Wno-date-time	# Fix compile error && warning on gcc 4.9 and later
 endif
 
-ccflags-y += -I$(src)/include
+ccflags-y += -I$(shell pwd)/include
 
 EXTRA_LDFLAGS += --strip-debug
 
